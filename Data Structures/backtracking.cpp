@@ -77,32 +77,32 @@ using namespace std;
 
 // Leetcode problem 46 Permutations
 
-void getpermuts(vector<int>&arr, int idx, vector<vector<int>>&ans){
+// void getpermuts(vector<int>&arr, int idx, vector<vector<int>>&ans){
 
-    if(idx==arr.size()){
-        ans.push_back(arr); // Basecase
-        return;
-    }
+//     if(idx==arr.size()){
+//         ans.push_back(arr); // Basecase
+//         return;
+//     }
 
-    for(int i=idx; i<arr.size(); i++){
-        swap(arr[idx], arr[i]);
-        getpermuts(arr, idx+1, ans);
+//     for(int i=idx; i<arr.size(); i++){
+//         swap(arr[idx], arr[i]);
+//         getpermuts(arr, idx+1, ans);
 
-        swap(arr[idx], arr[i]); // Backtracking
-    }
-}
+//         swap(arr[idx], arr[i]); // Backtracking
+//     }
+// }
 
-int main(){
-    vector<int>arr = {1,2,3};
-    vector<vector<int>>ans;
-    getpermuts(arr, 0, ans);
+// int main(){
+//     vector<int>arr = {1,2,3};
+//     vector<vector<int>>ans;
+//     getpermuts(arr, 0, ans);
     
-    // Print ans
-    for(int i=0; i<ans.size(); i++){
-        for(int j=0; j<ans[i].size(); j++){
-            cout<<ans[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-    return 0;
-}
+//     // Print ans
+//     for(int i=0; i<ans.size(); i++){
+//         for(int j=0; j<ans[i].size(); j++){
+//             cout<<ans[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
